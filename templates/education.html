@@ -3,6 +3,13 @@
     <head>
         <title>{{ title }}</title>
     </head>
+    <header>
+        <nav>
+            <a href="{{url_for('index')}}">Новости</a>
+            <a href="{{url_for('education')}}">Обучение</a>
+            <a href="{{url_for('callboard')}}">Доска объявлений</a>
+        </nav>
+    </header>
     <body>
         <h1>
             {{ title }}

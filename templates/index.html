@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link href="{{ url_for('static',filename='styles/style.css') }}" rel="stylesheet">
         <title>{{ title }}</title>
     </head>
+    <header>
+        <nav>
+            <a href="{{url_for('index')}}">Новости</a>
+            <a href="{{url_for('education')}}">Обучение</a>
+            <a href="{{url_for('callboard')}}">Доска объявлений</a>
+        </nav>
+    </header>
     <body>
         <h1>
-            Обучение
+            Новости
         </h1>
     </body>
 </html>

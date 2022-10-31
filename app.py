@@ -1,5 +1,4 @@
-from cgitb import html
-from flask import Flask, render_template
+from flask import Flask, render_template, url_for
 
 app = Flask(__name__)
 
@@ -12,7 +11,7 @@ def index():
 def education():
     return render_template('education.html', title="Обучение")
 
-@app.route("/callboard")
+@app.route('/callboard')
 def callboard():
     return render_template('callboard.html', title="Доска объявлений")
 
